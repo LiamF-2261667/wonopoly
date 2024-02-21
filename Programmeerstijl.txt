@@ -1,0 +1,42 @@
+
++---------------------------------------+
+| Naamgeving variabelen:				|
++---------------------------------------+
+
+	- private: m_naamUitMeerdereDelen
+	
+	- public: naamUitMeerdereDelen
+	
+	- private const: M_CONSTANT_NAME
+	
+	- public const: CONSTANT_NAME
+	
+	
++---------------------------------------+
+| Naamgeving functies:					|
++---------------------------------------+
+
+	functieNaam() {
+		...
+	}
+	
+	
++---------------------------------------+
+| Constructors:							|
++---------------------------------------+
+
+	Constructor()
+		: shortNotationVariableDecleration{ value },
+		otherVariable{ otherValue }
+		{ ... }
+		
+		
++---------------------------------------+
+| Klassen:								|
++---------------------------------------+
+
+	class ClassName
+	{
+		...
+	}
+	

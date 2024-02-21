@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TradeWindow</class>
+ <widget class="QDialog" name="TradeWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>883</width>
+    <height>762</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="0">
+    <widget class="QPushButton" name="confirmButton">
+     <property name="text">
+      <string>Confirm</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>251</height>
+      </size>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="1" rowspan="2">
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="Player2_cardList_label_2">
+        <property name="text">
+         <string>Cards to trade:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QScrollArea" name="Player1_cardList_scrollArea_2">
+        <property name="minimumSize">
+         <size>
+          <width>381</width>
+          <height>201</height>
+         </size>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>411</width>
+           <height>208</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QScrollArea" name="Player2_cardList_scrollArea_2">
+        <property name="minimumSize">
+         <size>
+          <width>381</width>
+          <height>201</height>
+         </size>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>411</width>
+           <height>208</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="Player1_cardList_label_2">
+        <property name="text">
+         <string>Cards to trade:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="declineButton">
+     <property name="text">
+      <string>Decline</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="minimumSize">
+      <size>
+       <width>841</width>
+       <height>251</height>
+      </size>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="1" rowspan="2">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="Player1_cardList_label">
+        <property name="text">
+         <string>Owned cards:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="Player2_cardList_label">
+        <property name="text">
+         <string>Owned cards:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QScrollArea" name="Player2_cardList_scrollArea">
+        <property name="minimumSize">
+         <size>
+          <width>381</width>
+          <height>201</height>
+         </size>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>411</width>
+           <height>209</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QScrollArea" name="Player1_cardList_scrollArea">
+        <property name="minimumSize">
+         <size>
+          <width>381</width>
+          <height>201</height>
+         </size>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>411</width>
+           <height>209</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2" alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="failureLabel">
+     <property name="text">
+      <string>$FAILURE_MESSAGE</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="minimumSize">
+      <size>
+       <width>851</width>
+       <height>161</height>
+      </size>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>241</width>
+        <height>121</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QGraphicsView" name="Player1_view">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Player1_label">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>$PLAYER</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Player1_balance">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>$BALANCE</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>20</y>
+        <width>241</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>241</width>
+        <height>121</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QGraphicsView" name="Player2_view">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Player2_label">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>30</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>$PLAYER</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="Player2_balance">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>70</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>$BALANCE</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSpinBox" name="Player1_money_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>50</y>
+        <width>91</width>
+        <height>29</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Player1_money_label">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>20</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Money:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Player2_money_label">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>20</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Money:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="Player2_money_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>50</y>
+        <width>91</width>
+        <height>29</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>10</y>
+        <width>20</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>90</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get Out Of Jail cards:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="Player1_jailcard_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>120</y>
+        <width>91</width>
+        <height>29</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>90</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get Out Of Jail cards:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="Player2_jailcard_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>120</y>
+        <width>91</width>
+        <height>29</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

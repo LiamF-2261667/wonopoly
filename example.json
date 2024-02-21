@@ -1,0 +1,16 @@
+"cardsAmount":5,
+"cards": [
+	1:{
+		"type":"start",
+		"receiveAmount":200
+	},
+	2:{
+		"type":"straat",
+		"payAmounts":[15, 30, 60, 120, 180]
+		"buyAmounts":[200, 300, 300, 300, 600]
+	},
+	3:{
+		"
+	}
+	
+]
